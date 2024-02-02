@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link
+      rel="shortcut icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utlity.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <div class="left-container">
+        <div class="left-top">
+          <div class="flex justify-content-between ">
+            <img class="logo" width="115" src="images/logo.svg" alt="spotify-logo" />
+            <img class="c-pointer cross" src="images/cross.svg" alt="">
+          </div>
+          <div class="box">
+            <img src="images/home.svg"/img>
+            <div class="text">Home</div>
+          </div>
+          <div class="box">
+            <img src="images/search.svg"/img>
+            <div class="text text-off">Search</div>
+          </div>
+        </div>
+        <div class="left-bottom">
+          <div class="box playlist">
+            <img src="images/library.svg"/img>
+            <div class="text">Your Playlist</div>
+            <button class="add-to-playlist-btn">+</button>
+          </div>
+          <div class="songs-playlist">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-container w-75">
+        <div class="right-top flex justify-content-between">
+          <div class="text-white c-pointer flex gap-10">
+            <img class="hamburger" src="images/hamburger.svg" alt="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              viewBox="0 -960 960 960"
+              width="20"
+              fill="white"
+            >
+              <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              viewBox="0 -960 960 960"
+              width="20"
+              fill="white"
+            >
+              <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+            </svg>
+          </div>
+          <div class="sign-in flex align-items-center">
+            <a href="#" class="text-grey">Sign up</a>
+            <button class="login">Log In</button>
+          </div>
+        </div>
+        <div class="right-middle">
+          <div class="middle-top flex justify-content-between">
+            <h3 class="spotify-playlist text-white">Spotify PlayList</h3>
+            <a href="#" class="text-grey">Show All</a>
+          </div>
+          <div class="card-section flex gap-10 flex-wrap"></div>
+          
+          <div class="playbar text-white">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="above-bar">
+              <div class="songinfo"></div>
+              <div class="songbuttons flex justify-content-center gap-15">
+                <img id="prev-song" class="c-pointer" src="images/prevsong.svg" alt="" />
+                <img id="playSong" class="c-pointer" src="images/play.svg" alt="" />
+                <img id="next-song" class="c-pointer" src="images/nextsong.svg" alt="" />
+              </div>
+              <div id="songtime"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

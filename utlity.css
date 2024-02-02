@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+:root{
+    --color-201f1f: #201f1f;
+    --color-8b8787: #8b8787;
+}
+.text-grey{
+    color: var(--color-8b8787);
+}
+.bg-dark-grey{
+    background-color: var(--color-201f1f);
+}
+
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.gap-10{
+    gap:10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-30{
+    gap: 30px;
+}
+.text-white{
+    color:white;
+}
+.w-25{
+    width: 25vw;
+}
+.w-75{
+    width: 75vw;
+}
+.bg-black{
+    background-color: black;
+}
+.border-10{
+    border-radius: 10px;
+}
+.m-3{
+    margin: 3px;
+}
+.m-5{
+    margin: 10px;
+}
+.m-10{
+    margin: 3px;
+}
+.p-20{
+    padding: 20px;
+}
+.c-pointer{
+    cursor: pointer;
+}
+.zindex{
+    z-index: 1;
+}
+.absolute{
+    position: absolute;
+}
